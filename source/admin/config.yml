@@ -16,10 +16,9 @@ collections:
     slug: '{{title}}'
     fields:
       - {label: Title, name: title, widget: string, required: true}
+      - {label: Path, name: path, widget: string}
       - {label: Publish Date, name: date, widget: datetime}
       - {label: Description, name: description, widget: string}
-      - {label: Image, name: image, widget: image}
-      - {label: Body, name: body, widget: markdown}
 
   - name: pages
     label: Pages
@@ -54,6 +53,39 @@ collections:
           - label: Bio
             name: bio
             widget: markdown
+
+      - file: "data/pages/books.yml"
+        label: Books
+        name: books
+        fields:
+          - label: Books
+            name: books_list
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Image
+                name: image
+                widget: image
+              - label: Date
+                name: date
+                widget: string
+              - label: Summary
+                name: summary
+                widget: markdown
+              - label: Purchase Link 1
+                name: purchase_link_1
+                widget: string
+              - label: Purchase Link 1 Text
+                name: purchase_link_text_1
+                widget: string
+              - label: Purchase Link 2
+                name: purchase_link_2
+                widget: string
+              - label: Purchase Link 2 Text
+                name: purchase_link_text_2
+                widget: string
 
       - file: "data/pages/contact.yml"
         label: Contact

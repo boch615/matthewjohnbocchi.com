@@ -1,7 +1,7 @@
 $__font-size-footer: 0.75rem;
 $__line-height-footer: 1rem;
 $__social-icon-mobile: 1rem;
-$__social-icon-desktop: 2rem;
+$__social-icon-desktop: 1.5rem;
 $__social-icon-padding-mobile: 0.25rem;
 
 footer {
@@ -23,7 +23,6 @@ footer {
   width: 62%;
 
   @include breakpoint("medium") {
-    font-size: $font-size-body;
     line-height: $line-height-body;
   }
 }
@@ -53,7 +52,7 @@ footer {
 
   @include breakpoint("medium") {
     height: $__social-icon-desktop;
-    margin: $space-1 $space-2;
+    margin: $space-1 $space-1;
     width: $__social-icon-desktop;
   }
 }

@@ -1,0 +1,10 @@
+---
+title: Media
+---
+
+
+<ul class="book-list">
+  <% blog.articles.each do | article | %>
+    <%= partial "partials/media/media_item", locals: {article: article} %>
+  <% end %>
+</ul>

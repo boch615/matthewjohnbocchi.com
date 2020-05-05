@@ -1,0 +1,45 @@
+---
+title: Books
+---
+
+
+<ul class="book-list">
+  <% data.pages.books.books_list.each do | book | %>
+    <li class="book-list__list-item">
+
+      <article class="book">
+
+        <img
+          class="book__cover"
+          src="<%= book.image %>"
+        />
+
+        <div class="book__details">
+          <h2><%= book.title %></h2>
+          <h3 class="book__date"><%= book.date %></h3>
+
+          <p><%= book.summary %></p>
+
+          <div class="book__purchase-links">
+
+            <%= link_to(
+              book.purchase_link_text_1,
+              book.purchase_link_1,
+              class: "book__purchase-link"
+            ) %>
+
+            <%= link_to(
+              book.purchase_link_text_2,
+              book.purchase_link_2,
+              class: "book__purchase-link"
+            ) %>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </li>
+  <% end %>
+</ul>

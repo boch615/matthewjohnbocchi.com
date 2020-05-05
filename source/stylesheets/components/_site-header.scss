@@ -27,10 +27,14 @@
 }
 
 .site-header__navigation-link {
-  display: block;
+  display: inline-block;
   margin: 0 $space-1;
 
   @include breakpoint("medium") {
     margin-left: $space-3;
   }
+}
+
+.site-header__anchor {
+  display: block;
 }

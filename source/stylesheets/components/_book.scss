@@ -1,0 +1,43 @@
+.book {
+  @include breakpoint("medium") {
+    display: flex;
+  }
+}
+
+.book__cover {
+  border: 1px solid $quartz;
+  height: intrinsic;
+  width: 40%;
+}
+
+.book__details {
+  @include breakpoint("medium") {
+    margin-left: $space-5;
+    max-width: $reading-width;
+  }
+}
+
+.book__date {
+  color: $smoke;
+}
+
+.book__purchase-links {
+  margin-top: $space-6;
+  max-width: $reading-width / 2;
+}
+
+.book__purchase-link {
+  background-color: transparent;
+  border: $button-border;
+  display: block;
+  margin-top: $space-1;
+  padding: $space-1 $space-3;
+  text-align: center;
+  z-index: 999;
+
+  &:hover {
+    background-color: $onyx;
+    color: $white;
+    transition: all $base-duration;
+  }
+}

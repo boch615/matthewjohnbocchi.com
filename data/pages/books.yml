@@ -1,0 +1,9 @@
+books_list:
+  - title: Sway
+    image: /images/uploads/book-cover.png
+    date: Fall 2020
+    summary: Back sleeve text of Sway text summary goes here.
+    purchase_link_1: https://www.amazon.com/dp/1642936405/ref=cm_sw_su_dp
+    purchase_link_text_1: Buy on Amazon
+    purchase_link_2: https://www.barnesandnoble.com/w/sway-matthew-john-bocchi/1136765370;jsessionid=D6D66FEF7CBA3C6E56ED0B7E132B9B86.prodny_store01-atgap10?ean=9781642936407
+    purchase_link_text_2: Buy on Barnes & Noble

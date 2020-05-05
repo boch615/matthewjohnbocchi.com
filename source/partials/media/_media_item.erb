@@ -1,0 +1,17 @@
+<li class="media__list-item">
+
+  <a
+    href="<%= article.data.path %>"
+    class="media__link"
+  >
+    <%= article.data.title %>
+  </a>
+
+  <date datetime="<%= article.data.date %>">
+    <%= article.data.date.to_s %>
+  </date>
+
+  <span>
+    | <%= article.data.description %>
+  </span>
+</li>

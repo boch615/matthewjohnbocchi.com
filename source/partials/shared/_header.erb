@@ -6,7 +6,7 @@
     <ul class="site-header__navigation-link-list">
       <% data.settings.navigation.nav_items.each do | nav_item | %>
         <li class="site-header__navigation-link">
-          <%= link_to nav_item.label, nav_item.path  %>
+          <%= link_to nav_item.label, nav_item.path, class: "site-header__anchor"  %>
         </li>
       <% end %>
     </ul>
