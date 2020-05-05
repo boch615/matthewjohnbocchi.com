@@ -1,14 +1,44 @@
-.contact-form {
-  margin: $space-2;
-  max-width: $reading-width;
-  padding: $space-5 $space-1;
+$__sidebar-width: 30%;
+$__form-width: 70%;
+
+.contact {
+  @include breakpoint("medium") {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.contact__sidebar {
+  background-color: $blue-cotton;
+  padding: $space-5 $space-3;
+  width: 100%;
 
   @include breakpoint("medium") {
-    margin: 0 auto;
+    width: $__sidebar-width;
   }
+}
+
+.contact__title {
+  margin-top: 0;
+}
+
+.contact-form {
+  margin: $space-2 $space-5;
+  padding: $space-5 $space-1;
 
   input {
     margin-bottom: $space-4;
+  }
+
+  @include breakpoint("medium") {
+    width: $__form-width;
+  }
+}
+
+.contact-form__form {
+  @include breakpoint("medium") {
+    margin: 0 auto;
+    width: 70%;
   }
 }
 
