@@ -1,3 +1,10 @@
+$__description-font-size: 0.75em;
+
+.media {
+  margin: $space-5 auto;
+  max-width: $reading-width;
+}
+
 .media__list-item {
   list-style-type: none;
   margin-bottom: $space-3;
@@ -5,4 +12,10 @@
 
 .media__link {
   display: block;
+  margin-bottom: $space-1;
+}
+
+.media__date,
+.media__description {
+  font-size: $__description-font-size;
 }

@@ -7,11 +7,11 @@
     <%= article.data.title %>
   </a>
 
-  <date datetime="<%= article.data.date %>">
+  <date datetime="<%= article.data.date %>" class="media__date">
     <%= article.data.date.to_s %>
   </date>
 
-  <span>
+  <span class="media__description">
     | <%= article.data.description %>
   </span>
 </li>
