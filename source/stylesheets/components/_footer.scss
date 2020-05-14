@@ -1,5 +1,5 @@
-$__font-size-footer: 0.75rem;
-$__line-height-footer: 1rem;
+$__font-size-footer: 0.6rem;
+$__line-height-footer: 0.8rem;
 $__social-icon-mobile: 1rem;
 $__social-icon-desktop: 1.5rem;
 $__social-icon-padding-mobile: 0.25rem;
@@ -21,10 +21,6 @@ footer {
   font-size: $__font-size-footer;
   line-height: $__line-height-footer;
   width: 62%;
-
-  @include breakpoint("medium") {
-    line-height: $line-height-body;
-  }
 }
 
 .footer__link {

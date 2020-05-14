@@ -9,16 +9,6 @@ $__form-width: 70%;
   }
 }
 
-.contact__sidebar {
-  background-color: $blue-cotton;
-  padding: $space-5 $space-3;
-  width: 100%;
-
-  @include breakpoint("medium") {
-    width: $__sidebar-width;
-  }
-}
-
 .contact__title {
   margin-top: 0;
 }
@@ -32,14 +22,19 @@ $__form-width: 70%;
   }
 
   @include breakpoint("medium") {
+    margin: $space-2 auto;
     width: $__form-width;
   }
+}
+
+.contact__description {
+  margin-bottom: $space-5;
 }
 
 .contact-form__form {
   @include breakpoint("medium") {
     margin: 0 auto;
-    width: 70%;
+    width: 60%;
   }
 }
 

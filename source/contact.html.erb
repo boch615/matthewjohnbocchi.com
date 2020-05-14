@@ -4,17 +4,16 @@ title: Contact Matthew John Bocchi
 
 <div class="contact">
 
-  <div class="contact__sidebar">
-    <p>
-      <%= data.pages.contact.description %>
-    </p>
-  </div>
-
   <section class="contact-form">
     <form netlify method="POST" name="contact" action="/success" class="contact-form__form">
       <h1 class="contact__title">
         <%= data.pages.contact.title %>
       </h1>
+
+      <p class="contact__description">
+        <%= data.pages.contact.description %>
+      </p>
+
       <label for="name">Name</label>
       <input name="name" id="name" type="text" autocomplete="name"/>
 
