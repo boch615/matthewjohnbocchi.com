@@ -18,7 +18,7 @@ title: Books
           <h2><%= book.title %></h2>
           <h3 class="book__date"><%= book.date %></h3>
 
-          <p><%= book.summary %></p>
+          <%= partial "partials/markdown/book-summary" %>
 
           <div class="book__purchase-links">
 

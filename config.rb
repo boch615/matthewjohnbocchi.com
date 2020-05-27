@@ -1,14 +1,10 @@
 #Bootstrap is used to style bits of the demo. Remove it from the config, gemfile and stylesheets to stop using bootstrap
 require "uglifier"
 
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
-
-# Use '#id' and '.classname' as div shortcuts in slim
-# http://slim-lang.com/
-Slim::Engine.set_options shortcut: {
-  '#' => { tag: 'div', attr: 'id' }, '.' => { tag: 'div', attr: 'class' }
-}
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"

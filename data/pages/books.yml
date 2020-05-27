@@ -2,7 +2,7 @@ books_list:
   - title: Sway
     image: /images/uploads/book-cover.png
     date: Fall 2020
-    summary: >-
+    summary: |
       “I couldn’t let myself be vulnerable. Not enough to express my true
       emotions, if I could even remember what they were. I was desperate.
       Desperate to know the story of my father’s death, desperate to forget what
