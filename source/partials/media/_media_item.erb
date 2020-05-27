@@ -1,17 +1,24 @@
 <li class="media__list-item">
 
-  <a
-    href="<%= article.data.path %>"
-    class="media__link"
-  >
-    <%= article.data.title %>
-  </a>
+  <div
+    class="media__image"
+    style="background-image: url(<%= article.data.image %>)">
+  </div>
 
-  <date datetime="<%= article.data.date %>" class="media__date">
-    <%= article.data.date.to_s %>
-  </date>
+  <div class="media__text-area">
+    <a
+      href="<%= article.data.path %>"
+      class="media__link"
+    >
+      <%= article.data.title %>
+    </a>
 
-  <span class="media__description">
-    | <%= article.data.description %>
-  </span>
+    <date datetime="<%= article.data.date %>" class="media__date">
+      <%= article.data.date.to_s %>
+    </date>
+
+    <span class="media__description">
+      | <%= article.data.description %>
+    </span>
+  </div>
 </li>

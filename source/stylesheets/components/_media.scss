@@ -1,4 +1,6 @@
 $__description-font-size: 0.75em;
+$__media-image-height: 7rem;
+$__media-image-width: 10rem;
 
 .media {
   margin: $space-5 auto;
@@ -6,8 +8,22 @@ $__description-font-size: 0.75em;
 }
 
 .media__list-item {
+  align-items: center;
+  display: flex;
   list-style-type: none;
   margin-bottom: $space-3;
+}
+
+.media__image {
+  background-size: cover;
+  background-position: center;
+  height: $__media-image-height;
+  width: $__media-image-width;
+}
+
+.media__text-area {
+  margin-left: $space-3;
+  width: 70%;
 }
 
 .media__link {
