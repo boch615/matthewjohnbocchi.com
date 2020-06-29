@@ -1,0 +1,9 @@
+= wrap_layout :layout
+  .blog-post
+    .title
+      - date = Date.parse current_page.data.date.to_s
+      span.date = date.strftime("%m-%d-%Y")
+      h1 = current_page.data.title
+
+    .row.content
+      = yield

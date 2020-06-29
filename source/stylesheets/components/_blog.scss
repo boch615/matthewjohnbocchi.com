@@ -1,0 +1,21 @@
+$__description-font-size: 0.75em;
+
+.blog,
+.blog-post {
+  margin: $space-5 auto;
+  max-width: $reading-width;
+}
+
+.blog__list-item {
+  list-style-type: none;
+  margin-bottom: $space-3;
+}
+
+.blog__text-area {
+  margin-left: $space-3;
+  width: 70%;
+}
+
+.blog__date {
+  font-size: $__description-font-size;
+}

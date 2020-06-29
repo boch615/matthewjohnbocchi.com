@@ -22,9 +22,17 @@ page "/partials/*", layout: false
 page "/admin/*", layout: false
 
 activate :blog do |blog|
+  blog.name = "media"
   blog.permalink = "media/{year}/{title}.html"
-  blog.sources = "posts/{title}.html"
+  blog.sources = "media/{title}.html"
   blog.layout = "media-detail"
+end
+
+activate :blog do |blog|
+  blog.name = "blog"
+  blog.permalink = "blog/{title}.html"
+  blog.sources = "posts/{title}.html"
+  blog.layout = "blog-detail"
 end
 
 # With alternative layout

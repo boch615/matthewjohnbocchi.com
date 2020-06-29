@@ -1,0 +1,10 @@
+---
+title: Blog
+blog: blog
+---
+
+<ul class="blog">
+  <% blog.articles.each do | article | %>
+    <%= partial "partials/blog/blog_preview", locals: {article: article} %>
+  <% end %>
+</ul>

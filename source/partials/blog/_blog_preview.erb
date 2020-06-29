@@ -1,0 +1,12 @@
+<li class="blog__list-item">
+
+  <h2>
+    <%= link_to article.data.title, article %>
+  </h2>
+
+  <date datetime="<%= article.data.date %>" class="blog__date">
+    <%= article.data.date.to_s %>
+  </date>
+
+  <%= article.summary(250, '...') %>
+</li>

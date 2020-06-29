@@ -7,9 +7,9 @@ public_folder: /images/uploads
 #publish_mode: editorial_workflow #optional, enables publishing workflow
 
 collections:
-  - name: blog
-    label: Blog
-    folder: source/posts/
+  - name: media
+    label: Media
+    folder: source/media/
     extension: .html.md
     format: frontmatter
     create: true
@@ -19,6 +19,17 @@ collections:
       - {label: Path, name: path, widget: string}
       - {label: Publish Date, name: date, widget: datetime}
       - {label: Description, name: description, widget: string}
+
+  - name: blog
+    label: Blog
+    folder: source/posts/
+    extension: .html.md
+    format: frontmatter
+    create: true
+    slug: '{{title}}'
+    fields:
+      - {label: Title, name: title, widget: string, required: true}
+      - {label: Publish Date, name: date, widget: datetime}
 
   - name: pages
     label: Pages
