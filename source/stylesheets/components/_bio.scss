@@ -1,5 +1,5 @@
 .bio {
-  align-items: center;
+  align-items: start;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,8 +15,7 @@
 .bio__author-photo {
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 50%;
-  height: 175px;
+  height: 219px;
   width: 175px;
 
   @include breakpoint("medium") {
