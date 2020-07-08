@@ -1,5 +1,5 @@
 .bio {
-  align-items: start;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,20 +7,30 @@
   padding: $space-5 $space-1;
 
   @include breakpoint("medium") {
+    align-items: start;
     flex-direction: row;
     margin: 0 auto;
   }
 }
 
-.bio__author-photo {
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 219px;
-  width: 175px;
+.bio__author-photo-wrapper {
+  margin: 0;
 
   @include breakpoint("medium") {
     margin-right: $space-5;
   }
+}
+
+.bio__author-photo {
+  text-align: center;
+  width: 175px;
+}
+
+.bio__author-photo-credit {
+  color: gray;
+  font-style: italic;
+  font-size: $font-size-small;
+  text-align: center;
 }
 
 .bio__text {
