@@ -14,7 +14,7 @@
     </a>
 
     <date datetime="<%= article.data.date %>" class="media__date">
-      <%= article.data.date.to_s %>
+      <%= article.data.date.strftime("%b %d, %Y") %>
     </date>
 
     <span class="media__description">
