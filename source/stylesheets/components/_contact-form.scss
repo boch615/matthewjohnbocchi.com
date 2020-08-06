@@ -27,10 +27,6 @@ $__form-width: 70%;
   }
 }
 
-.contact__description {
-  margin-bottom: $space-5;
-}
-
 .contact-form__form {
   @include breakpoint("medium") {
     margin: 0 auto;
@@ -40,4 +36,10 @@ $__form-width: 70%;
 
 .contact-form__submit-button {
   margin-top: $space-5;
+}
+
+.contact__information-callout {
+  background-color: $blue-cotton;
+  margin: $space-4 0;
+  padding: $space-3;
 }
