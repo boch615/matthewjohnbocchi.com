@@ -1,13 +1,14 @@
 .book {
   @include breakpoint("medium") {
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
   }
 }
 
 .book__cover {
   border: 1px solid $quartz;
   height: intrinsic;
-  width: 40%;
+  width: 100%;
 }
 
 .book__details {
@@ -23,21 +24,35 @@
 
 .book__purchase-links {
   margin-top: $space-6;
-  max-width: $reading-width / 2;
+  @include breakpoint("medium") {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .book__purchase-link {
+  align-self: stretch;
   background-color: transparent;
-  border: $button-border;
+  border: 2px solid #d1d7dc;
   display: block;
-  margin-top: $space-1;
+  line-height: 0;
+  margin: $space-1 $space-1 0 0;
   padding: $space-1 $space-3;
   text-align: center;
   z-index: 999;
 
+  @include breakpoint("medium") {
+    width: 25%;
+  }
+  
   &:hover {
-    background-color: $onyx;
-    color: $white;
+    border: $button-border;
     transition: all $base-duration;
   }
+}
+
+.book__button-logo {
+  max-height: 30px;
+  max-width: 100%;
 }

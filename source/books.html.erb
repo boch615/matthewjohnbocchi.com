@@ -22,17 +22,20 @@ title: Books
 
           <div class="book__purchase-links">
 
-            <%= link_to(
-              book.purchase_link_text_1,
-              book.purchase_link_1,
-              class: "book__purchase-link"
-            ) %>
-
-            <%= link_to(
-              book.purchase_link_text_2,
-              book.purchase_link_2,
-              class: "book__purchase-link"
-            ) %>
+            <% book.purchase_links.each do | button | %>
+              <li class="book__purchase-link">
+                <% link_to(
+                  button.path,
+                  ariaLabel: button.label,
+                  target: "_blank"
+                  ) do %>
+                  <%= image_tag(
+                    button.logo,
+                    class: "book__button-logo"
+                  ) %>
+                <% end %>
+              </li>
+            <% end %>
 
           </div>
 
